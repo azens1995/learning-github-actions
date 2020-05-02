@@ -60,3 +60,13 @@ jobs:
 
     3. name
         - an optional identifier for the step
+
+---
+## Adding an Action
+* uses: execute an action in operating system
+
+| Action Location | Syntax |
+| --- | --- |
+| Public Repository | <p>uses: {owner}/{repo}/@{ref}<br>uses: octocat/super-cool-action@v1</p> |
+| The same repository as the workflow | <p>uses: ./path/to/the/action<br>uses: ./.github/actions/my-cool-action</p> |
+| A docker image registry | <p>uses: docker://{image}:{tag}<br>uses: docker://hello-world:latest</p> |
