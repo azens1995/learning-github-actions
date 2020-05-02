@@ -70,3 +70,22 @@ jobs:
 | Public Repository | <p>uses: {owner}/{repo}/@{ref}<br>uses: octocat/super-cool-action@v1</p> |
 | The same repository as the workflow | <p>uses: ./path/to/the/action<br>uses: ./.github/actions/my-cool-action</p> |
 | A docker image registry | <p>uses: docker://{image}:{tag}<br>uses: docker://hello-world:latest</p> |
+
+---
+
+## checkout action:
+checks out all the repository code into te  computer environments file system making files available to the 
+steps that runs in the job
+
+---
+
+## run
+execute commands in the operating system's default shell
+    * bash: Default shell for Ubuntu, macOS
+    * powershell: Default shell for Windows
+
+| Run | Syntax |
+| --- | ---    |
+| Single-line command | <p>run: {command} {parameters} {arguments}</br>run: mv ./output ./archive</p> |
+| Multiple command    | <p>run: &#124;</br>Command 1</br>Command 2<br>run: &#124;<br>g++ -c -Wall -g Main.cpp<br>
+g++ -g -o Main.exe Main.io</p> 
