@@ -21,7 +21,7 @@ jobs:
 - The github event that triggers the workflow
 - required
 
-i. on events
+    i. on events
 - Repository events
 - Push
 - pull_request
