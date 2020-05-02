@@ -21,17 +21,17 @@ jobs:
 - The github event that triggers the workflow
 - required
 
-    i. on events
-- Repository events
-- Push
-- pull_request
-- release
-- web hooks
-    -- branch creation
-    -- issues
-    -- members
-- scheduled
-    -- cron format
+    1. on events
+        - Repository events
+        - Push
+        - pull_request
+        - release
+        - web hooks
+            -- branch creation
+            -- issues
+            -- members
+        - scheduled
+            -- cron format
 
 3. jobs
 - workflows must have at least one job
@@ -51,12 +51,12 @@ jobs:
 - access to the file system
 - each step runs in its own process
 
-i. uses
-- identifier an action to use
-- defines the location of that action
+    1. uses
+        - identifier an action to use
+        - defines the location of that action
 
-ii. run
-- runs commands in the virtual environment's shell
+    2. run
+        - runs commands in the virtual environment's shell
 
-iii. name
-- an optional identifier for the step
+    3. name
+        - an optional identifier for the step
