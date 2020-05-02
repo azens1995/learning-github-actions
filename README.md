@@ -21,7 +21,7 @@ jobs:
 - The github event that triggers the workflow
 - required
 
-2.1. on events
+i. on events
 - Repository events
 - Push
 - pull_request
@@ -51,12 +51,12 @@ jobs:
 - access to the file system
 - each step runs in its own process
 
-5.1. uses
+i. uses
 - identifier an action to use
 - defines the location of that action
 
-5.2. run
+ii. run
 - runs commands in the virtual environment's shell
 
-5.3. name
+iii. name
 - an optional identifier for the step
