@@ -87,4 +87,4 @@ execute commands in the operating system's default shell
 | Run | Syntax |
 | --- | ---    |
 | Single-line command | <p>run: {command} {parameters} {arguments}</br>run: mv ./output ./archive</p> |
-| Multiple command    | <p>run: &#124;</br>Command 1</br>Command 2</br>run: &#124;</br>g++ -c -Wall -g Main.cpp<br>g++ -g -o Main.exe Main.io</p> |
+| Multiple command    | <p>run: &#124;</br>      Command 1</br>      Command 2</br>run: &#124;</br>      g++ -c -Wall -g Main.cpp<br>      g++ -g -o Main.exe Main.io</p> |
