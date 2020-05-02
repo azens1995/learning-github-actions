@@ -19,24 +19,4 @@ jobs:
           uses: actions/checkout@v2
         - name: Step Two
           run: "Get-ChildItem Env: | Sort-Object Name"
-    job3:
-      name: Use Environment Variable
-      env:
-        JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for ubuntu'
-      runs-on: ubuntu-latest
-      steps:
-        - name: Print custom environment variable for ubuntu latest
-          env:
-            STEP_ENVIRONMENT_VARIABLE: 'custom step environment variable for bash'
-          run: |
-            echo "Accessing environment variable in run command"
-            echo "$WORKSPACE_ENVIRONMENT_VARIABLE"
-            echo "$JOB_ENVIRONMENT_VARIABLE"
-            echo "$STEP_ENVIRONMENT_VARIABLE"
-            echo "_________________________________________________________________"
-            echo "Accessing environment variable using env context"
-            echo "${{ env.WORKSPACE_ENVIRONMENT_VARIABLE }}"
-            echo "${{ env.JOB_ENVIRONMENT_VARIABLE  }}"
-            echo "${{ env.STEP_ENVIRONMENT_VARIABLE  }} Not defined"
-
-
+    
