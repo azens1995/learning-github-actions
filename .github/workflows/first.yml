@@ -1,5 +1,5 @@
 name: first
-on: push
+on: [pull_request]
 jobs:
     job1:
       name: First Job

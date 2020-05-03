@@ -1,0 +1,12 @@
+name: Sample Workflow
+on: [push]
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo a String
+        run: echo "Hello World"
+      - name: multiple script
+        run: |
+          node -v
+          npm -v
