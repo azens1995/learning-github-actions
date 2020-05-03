@@ -1,8 +1,21 @@
 name: Actions Workflow
 
 on:
-  repository_dispatch:
-    types: [build]
+  push:
+    branches:
+      - master
+      - develop
+      - 'feature/*' # This will match the branch with feature/featA, but will ignore the nested ones feature/featA/feat
+      - 'feature/**' # This will include the feature/featA/featB too
+      - '!feature' # The exclamation mark, !, will ignore this branch
+    tags:
+      - v1.* # This will match any tag with v1.something
+    
+    paths:
+      - '**.js' # This will match the trigger with any js file changes
+
+  #repository_dispatch:
+  #  types: [build]
   #schedule:
   #  - cron: "0/5 * * * *"
   #  - cron: "0/6 * * * *"
