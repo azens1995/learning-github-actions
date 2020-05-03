@@ -142,23 +142,23 @@ Profile
                     > Note: Add the note for the token
                     > Check the `repo` and generate the token
 
-### Event_Type
-    The event type used in the post request should be the same in the yaml file too.
-    As we have seen here the use of the `build` in the post request as well as in the yaml file under the `repostiry_dispatch`'s type to be `build`.
+### Event Type
+The event type used in the post request should be the same in the yaml file too.
+As we have seen here the use of the `build` in the post request as well as in the yaml file under the `repostiry_dispatch`'s type to be `build`.
 
-    That is the first step to connect the custom trigger dispatch.
-    The second thing is we can add the payload to the post request too. To add the payload: </br>
-    ```
-    {
-        "event_type": "NAME",
-        "client_payload": {
-            "KEY": "VALUE"
-        }
+That is the first step to connect the custom trigger dispatch.
+The second thing is we can add the payload to the post request too. To add the payload: </br>
+```
+{
+    "event_type": "NAME",
+    "client_payload": {
+        "KEY": "VALUE"
     }
-    ```
+}
+```
 
-    Now, we can access this payload in the YAML file using the github access as: </br>
-    ```
-        run: echo ${{ github.event.client_payload.KEY }}
-    ```
+Now, we can access this payload in the YAML file using the github access as: </br>
+```
+    run: echo ${{ github.event.client_payload.KEY }}
+```
 
