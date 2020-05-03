@@ -15,7 +15,11 @@ jobs:
       - name: List files after checkout
         run: |
           pwd
-          ls
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{ github.token }}"
       - name: Simple JS Actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
