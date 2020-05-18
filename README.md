@@ -1,5 +1,5 @@
 # Github Actions
-## Build Status Badge: ![](https://github.com/azens1995/learning-github-actions/workflows/first/badge.svg)
+![](https://github.com/azens1995/learning-github-actions/workflows/first/badge.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Workflows and Actions Attributes
 
